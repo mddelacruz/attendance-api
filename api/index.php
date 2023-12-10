@@ -13,9 +13,9 @@ $parts = explode("/", $path);
 $resource = $parts[1];
 echo $resource;
 
-$id = $parts[4] ?? null;
+$id = $parts[3] ?? null;
 
-if($resource != "attendance-api") {
+if($resource != "api") {
     http_response_code(404);
     exit;
 }
