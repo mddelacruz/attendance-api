@@ -11,7 +11,7 @@ $path = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 $parts = explode("/", $path);
 
 $resource = $parts[1];
-echo $resource;
+//echo $resource;
 
 $id = $parts[4] ?? null;
 
